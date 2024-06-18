@@ -1,4 +1,4 @@
-# Yet Another Lightning Hydra Template
+# All-you-can-eat Template
 
 Efficient workflow and reproducibility are extremely important components in every machine learning projects, which
 enable to:
@@ -7,25 +7,13 @@ enable to:
 - Promote confidence in the results and transparency.
 - Save time and resources.
 
-[PyTorch Lightning](https://github.com/Lightning-AI/lightning) and [Hydra](https://github.com/facebookresearch/hydra)
-serve as the foundation upon this template. Such reasonable technology stack for deep learning prototyping offers a
-comprehensive and seamless solution, allowing you to effortlessly explore different tasks across a variety of hardware
-accelerators such as CPUs, multi-GPUs, and TPUs. Furthermore, it includes a curated collection of best practices and
-extensive documentation for greater clarity and comprehension.
-
-This template could be used as is for some basic tasks like Classification, Segmentation or Metric Learning, or be
-easily extended for any other tasks due to high-level modularity and scalable structure.
-
-As a baseline I have used gorgeous [Lightning Hydra Template](https://github.com/ashleve/lightning-hydra-template),
-reshaped and polished it, and implemented more features which can improve overall efficiency of workflow and
-reproducibility.
 
 ## Quick start
 
 ```shell
 # clone template
-git clone https://github.com/gorodnitskiy/yet-another-lightning-hydra-template
-cd yet-another-lightning-hydra-template
+git clone https://github.com/tommasocalo/all-you-can-eat-template.git
+cd all-you-can-eat-template
 
 # install requirements
 pip install -r requirements.txt
@@ -1091,7 +1079,7 @@ As a baseline the tests cover:
 - Losses loading
 - Metrics loading
 - Models loading and utils
-- Training on 1% of MNIST dataset, for example:
+- Training on 1% of  dataset, for example:
   - running 1 train, val and test steps
   - running 1 epoch, saving checkpoint and resuming for the second epoch
   - running 2 epochs with DDP simulated on CPU
